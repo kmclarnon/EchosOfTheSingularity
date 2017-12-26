@@ -9,10 +9,37 @@
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
 
+  <developers>
+    <developer>
+      <name>Kevin McLarnon</name>
+      <email>mclarnon.k@gmail.com</email>
+    </developer>
+  </developers>
+
+  <properties>
+    <guava.version>21</guava.version>
+    <guice.version>4.1.0</guice.version>
+  </properties>
+
   <modules>
     <module>EosCore</module>
     <module>EosClient</module>
     <module>EosData</module>
   </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${guava.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.inject</groupId>
+        <artifactId>guice</artifactId>
+        <version>${guice.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
 </project>
