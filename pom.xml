@@ -17,7 +17,7 @@
   </developers>
 
   <properties>
-    <guava.version>21</guava.version>
+    <guava.version>20.0</guava.version>
     <guice.version>4.1.0</guice.version>
   </properties>
 
