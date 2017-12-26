@@ -1,4 +1,4 @@
-package sample;
+package com.github.kmclarnon.eos;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
