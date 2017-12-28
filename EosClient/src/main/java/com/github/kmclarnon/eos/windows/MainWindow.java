@@ -12,6 +12,7 @@ public class MainWindow {
   public MainWindow(Stage primaryStage) {
     this.primaryStage = primaryStage;
     Button button = new Button("New Game");
+
     button.setOnAction(event -> {
 
     });
