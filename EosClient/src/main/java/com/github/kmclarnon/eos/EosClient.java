@@ -21,6 +21,9 @@ public class EosClient extends Application {
 
   @Override
   public void start(Stage primaryStage) throws Exception {
+    // do this once to make the logs easier to read
+    Thread.currentThread().setName("app-main");
+
     LOG.info("Beginning application startup");
 
     LOG.debug("Creating injector");
