@@ -1,6 +1,7 @@
 package com.github.kmclarnon.eos.config;
 
 import com.github.kmclarnon.eos.core.BaseModule;
+import com.github.kmclarnon.eos.scenes.ScenesModule;
 import com.google.inject.Key;
 import com.google.inject.name.Names;
 
@@ -14,6 +15,8 @@ public class EosClientModule extends BaseModule {
   }
 
   protected void configure() {
-    bind(Key.get(Stage.class, Names.named(ConfigKeys.PRIMARY_STAGE))).toInstance(primaryStage);
+    install(new ScenesModule());
+
+    bind(Key.get(Stage.class, Names.named(ConfigKeys.STAGE_PRIMARY))).toInstance(primaryStage);
   }
 }
